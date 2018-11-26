@@ -5,7 +5,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "node_modules/expo/AppEntry.js",
   "typings": "build/StorageSlot.d.ts",
   "files": [
@@ -41,12 +41,12 @@
     "babel-plugin-module-resolver": "^3.1.1",
     "babel-preset-expo": "^5.0.0",
     "concurrently": "^4.0.1",
+    "expo": "^31.0.2",
     "json": "^9.0.6",
     "prettier": "^1.15.2",
-    "rimraf": "^2.6.2",
-    "typescript": "^3.1.6",
-    "expo": "^31.0.2",
     "react": "16.5.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz"
+    "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz",
+    "rimraf": "^2.6.2",
+    "typescript": "^3.1.6"
   }
 }
