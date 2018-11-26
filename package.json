@@ -1,16 +1,31 @@
 {
   "name": "react-native-storage-slot",
-  "version": "1.0.0",
-  "main": "build/StorageSlot.js",
-  "typings": "build/StorageSlot.d.ts",
+  "description": "A tiny typed wrapper around ReactNative AsyncStorage, perfect for TS",
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "1.0.2",
+  "main": "node_modules/expo/AppEntry.js",
+  "typings": "build/StorageSlot.d.ts",
+  "files": [
+    "build"
+  ],
+  "keywords": [
+    "react",
+    "react-native",
+    "storage"
+  ],
   "scripts": {
-    "build": "tsc",
+    "start": "concurrently \"yarn run start:expo\" \"yarn run start:typecheck\"",
     "start:expo": "expo start",
     "start:typecheck": "tsc --noEmit --watch",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "eject": "expo eject"
+    "build": "tsc",
+    "build:clear": "rimraf build",
+    "prepublish": "yarn build && yarn configure:publish",
+    "postpublish": "yarn configure:expo && yarn build:clear",
+    "configure:publish": "json -I -f package.json -e 'this.main=\"build/index.js\"'",
+    "configure:expo": "json -I -f package.json -e 'this.main=\"node_modules/expo/AppEntry.js\"'"
   },
   "dependencies": {
     "expo": "^31.0.2",
@@ -27,7 +42,9 @@
     "babel-plugin-module-resolver": "^3.1.1",
     "babel-preset-expo": "^5.0.0",
     "concurrently": "^4.0.1",
+    "json": "^9.0.6",
     "prettier": "^1.15.2",
+    "rimraf": "^2.6.2",
     "typescript": "^3.1.6"
   }
 }
