@@ -1,1 +1,1 @@
-export * from 'StorageSlot'
+export * from './StorageSlot'
