@@ -1,1 +1,1 @@
-export default from 'StorageSlot'
+export * from 'StorageSlot'
