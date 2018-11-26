@@ -27,10 +27,9 @@
     "configure:publish": "json -I -f package.json -e 'this.main=\"build/index.js\"'",
     "configure:expo": "json -I -f package.json -e 'this.main=\"node_modules/expo/AppEntry.js\"'"
   },
-  "dependencies": {
-    "expo": "^31.0.2",
-    "react": "16.5.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz"
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
@@ -45,6 +44,11 @@
     "json": "^9.0.6",
     "prettier": "^1.15.2",
     "rimraf": "^2.6.2",
-    "typescript": "^3.1.6"
+    "typescript": "^3.1.6",
+    "dependencies": {
+      "expo": "^31.0.2",
+      "react": "16.5.0",
+      "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz"
+    },
   }
 }
