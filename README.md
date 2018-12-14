@@ -45,3 +45,8 @@ The value you store should be serializable with JSON.parse / JSON.stringify.
 # DEV
 
 To run example app in Expo, replace in package.json:   "main": "node_modules/expo/AppEntry.js",`
+
+# Hire a freelance expert
+
+Looking for a React/ReactNative freelance expert with more than 5 years production experience?
+Contact me from my [website](https://sebastienlorber.com/) or with [Twitter](https://twitter.com/sebastienlorber).
