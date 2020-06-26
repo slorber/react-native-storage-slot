@@ -5,7 +5,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "1.0.5",
+  "version": "2.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "typings": "build/index.d.ts",
   "files": [
