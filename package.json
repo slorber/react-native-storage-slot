@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "start": "concurrently \"yarn run start:expo\" \"yarn run start:typecheck\"",
-    "start:expo": "expo start",
+    "start:expo": "yarn configure:expo && expo start",
     "start:typecheck": "tsc --noEmit --watch",
     "build": "tsc",
     "build:clear": "rimraf build",
@@ -29,23 +29,23 @@
   },
   "peerDependencies": {
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "@react-native-community/async-storage": "*"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.2",
     "@babel/preset-typescript": "^7.1.0",
-    "@types/expo": "31.0.0",
-    "@types/react": "^16.5.0",
-    "@types/react-native": "^0.57.13",
+    "@types/react": "~16.9.41",
+    "@types/react-native": "~0.62.13",
     "babel-core": "^7.0.0-bridge.0",
     "babel-plugin-module-resolver": "^3.1.1",
-    "babel-preset-expo": "^5.0.0",
+    "@react-native-community/async-storage": "1.11.0",
+    "babel-preset-expo": "^8.2.3",
     "concurrently": "^4.0.1",
-    "expo": "^31.0.2",
+    "expo": "^38.0.0",
     "json": "^9.0.6",
     "prettier": "^1.15.2",
-    "react": "16.5.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz",
+    "react": "16.11.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-38.0.0.tar.gz",
     "rimraf": "^2.6.2",
     "typescript": "^3.1.6"
   }
