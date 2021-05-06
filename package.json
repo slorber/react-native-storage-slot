@@ -42,7 +42,7 @@
     "babel-preset-expo": "^8.2.3",
     "concurrently": "^4.0.1",
     "expo": "^38.0.0",
-    "json": "^9.0.6",
+    "json": "^10.0.0",
     "prettier": "^1.15.2",
     "react": "16.11.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-38.0.0.tar.gz",
